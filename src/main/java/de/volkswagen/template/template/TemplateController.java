@@ -38,6 +38,6 @@ TemplateController {
 
 	@DeleteMapping("/{id}")
 	public void delete(@PathVariable String id) {
-		return this.templateService.delete(id);
+		this.templateService.delete(id);
 	}
 }
